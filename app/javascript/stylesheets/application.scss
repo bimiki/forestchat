@@ -1,6 +1,6 @@
 .chat-room {
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
   .message {
     min-height: 59px;
     .content-container {
@@ -14,8 +14,8 @@
        font-size: 0.8rem;
        color: #777777;
        margin-left: 10px;
-    }
-   }
+      }
+     }
    &.me {
      .content-container {
        float: right;
