@@ -1,10 +1,11 @@
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: forestchat_production
   username: postgres
   password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
-
+  pool: 5
 
 
 
