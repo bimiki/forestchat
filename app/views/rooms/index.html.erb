@@ -2,13 +2,20 @@
 <div class="container-fluid">
   <div class="row">
      <div class="col-3">
+       <div class="card">
+         <div class="card-body">
+          <small>Logged in as</small><br>
+          <b><%= current_user.username %></b>
+         </div>
+       </div>
             <%= render 'form', room: Room.new %>
             <hr>
             <% @rooms.each do |room| %>
              <%= link_to room do %>
-               <div class="card mb-2">
+               <div class="card mb-2 room-card">
                  <div class="card-body">
-                   <%= room.name %>
+                   <span class="name"><%= room.name %></span><br>
+                   <small> </small>
                  </div>
                </div>
             <% end %>
