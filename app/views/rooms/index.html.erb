@@ -29,13 +29,13 @@
     </div>
     <div class="col-9">
       <% if @room.present? %>
-        <div class="chat-room">
-          <nav class="navbar navbar-light">
-            <span class="navbar-brand" href="#">
-              <b><%= @room.name %></b>
-            </span>
-            <small><%= @room.users.uniq.count %> Members</small>
-          </nav>
+          <div class="chat-room">
+            <nav class="navbar navbar-light" style="background-color: #007bff; mr-auto mt-2 mt-lg-0">
+              <b class="navbar-brand" href="#">
+                <div>Room ~ <%= @room.name %></div>
+              </b>
+              <small><%= @room.users.uniq.count %> Members</small>
+            </nav>
           <div id="messages">
             <% @room.messages.each do |message| %>
               <%= render 'messages/message', message: message %>

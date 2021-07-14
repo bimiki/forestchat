@@ -9,7 +9,8 @@ body {
 
 .chat-room {
   height: 100vh;
-  background-image: url(https://media.giphy.com/media/3o7GVDAkLp4cEMbzwc/giphy.gif);
+  background-image: url(https://i.pinimg.com/originals/8c/f3/35/8cf33581559754a9c3420f990d99a142.gif);
+  background-size: cover;
 
   #messages {
     height: 100%;
@@ -20,8 +21,7 @@ body {
 
   .navbar {
     border-bottom: 1px solid #eeeeee;
-    margin-left: -15px;
-    width: calc(100% + 30px);
+    width: calc(100%);
   }
 
   .message {
